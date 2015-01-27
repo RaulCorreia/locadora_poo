@@ -38,7 +38,18 @@ public class Filmes {
 
 
 	public void setAno(int ano) {
-		this.ano = ano;
+		
+		do
+			
+			if (ano > 1900){
+				this.ano = ano;
+				
+			} else {
+				
+				//Gera mensagem
+			}
+		while (ano < 1900);
+		
 	}
 	
 	
