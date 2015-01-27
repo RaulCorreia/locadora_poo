@@ -1,56 +1,21 @@
 
-public class Filmes {
-	
-	private String genero;
-	private String titulo;
-	private int ano;
+public class Filmes extends Produtos {
 	
 	
-	public Filmes(String genero, String titulo, int ano){
+
+	public Filmes(String genero, int ano, boolean locado, boolean reservado, float preco, String titulo) {
+		
+		super(genero, ano, locado, reservado, preco, titulo);
 		
 		
 	}
 
 
-	public String getGenero() {
-		return genero;
-	}
 
 
-	public void setGenero(String genero) {
-		this.genero = genero;
-	}
+	
 
-
-	public String getTitulo() {
-		return titulo;
-	}
-
-
-	public void setTitulo(String titulo) {
-		this.titulo = titulo;
-	}
-
-
-	public int getAno() {
-		return ano;
-	}
-
-
-	public void setAno(int ano) {
-		
-		do
-			
-			if (ano > 1900){
-				this.ano = ano;
-				
-			} else {
-				
-				//Gera mensagem
-			}
-		while (ano < 1900);
-		
-	}
+	
 	
 	
 
