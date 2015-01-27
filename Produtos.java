@@ -2,20 +2,18 @@
 public class Produtos {
 	
 	private String genero;
-	private int ano;
 	private boolean locado;
 	private boolean reservado;
 	private float preco;
-	private String titulo;
 	
-	public Produtos(String genero, int ano, boolean locado, boolean reservado, float preco, String titulo) {
+	
+	public Produtos(String genero, boolean locado, boolean reservado, float preco) {
 		
 		setGenero(genero);
-		setAno(ano);
 		setLocado(locado);
 		setReservado(reservado);
 		setPreco(preco);
-		setTitulo(titulo);
+		
 		
 	}
 
@@ -28,24 +26,6 @@ public class Produtos {
 		this.genero = genero;
 	}
 
-	public int getAno() {
-		return ano;
-	}
-
-	public void setAno(int ano) {
-		
-		do
-			
-			if (ano > 1900){
-				this.ano = ano;
-				
-			} else {
-				
-				//Gera mensagem
-			}
-		while (ano < 1900);
-		
-	}
 
 	public boolean isLocado() {
 		return locado;
@@ -84,17 +64,6 @@ public class Produtos {
 	}
 	
 	
-	public String getTitulo() {
-		return titulo;
-	}
-
-
-
-
-	public void setTitulo(String titulo) {
-		this.titulo = titulo;
-	}
-
 	
 	
 

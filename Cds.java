@@ -2,11 +2,13 @@
 public class Cds extends Produtos{
 	
 	String nomeBanda;
+	String album;
 	
 
-	public Cds(String genero, int ano, boolean locado, boolean reservado, float preco, String nomeBanda, String titulo) {
-		super(genero, ano, locado, reservado, preco, titulo);
+	public Cds(String genero, boolean locado, boolean reservado, float preco, String nomeBanda, String album) {
+		super(genero, locado, reservado, preco);
 		setNomeBanda(nomeBanda);
+		setAlbum(album);
 	}
 	
 
@@ -17,6 +19,18 @@ public class Cds extends Produtos{
 	public void setNomeBanda(String nomeBanda) {
 		this.nomeBanda = nomeBanda;
 	}
+
+
+	public String getAlbum() {
+		return album;
+	}
+
+
+	public void setAlbum(String album) {
+		this.album = album;
+	}
+	
+	
 	
 	
 	
